@@ -65,9 +65,9 @@ function newNonPlayableCharacter(x, y) {
     stop: stop,
   };
 
-  async function sleep(time) {
+  function sleep(time) {
     return new Promise((resolve) => {
-      await(resolve, time);
+      setTimeout(resolve, time);
     });
   }
 }
