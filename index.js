@@ -6,8 +6,13 @@ const npc = newNonPlayableCharacter(50, 300);
 
 //wrap the asynchronous logic in an async function and invoke it
 async function moveNPC() {
-  await npc.walkEast(2000);
-  npc.walkSouth();
+  await npc.walkNorth(1400);
+  await npc.walkEast(1200);
+  await npc.walkSouth(300);
+  await npc.walkEast(1500);
+  await npc.walkSouth(1500);
+  await npc.walkWest(2700);
+  npc.walkNorth(400);
 }
 moveNPC();
 
